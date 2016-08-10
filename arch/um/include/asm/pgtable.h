@@ -119,6 +119,8 @@ extern unsigned long end_iomem;
 
 #define pte_present(x)	pte_get_bits(x, (_PAGE_PRESENT | _PAGE_PROTNONE))
 
+#define io_remap_pfn_range  remap_pfn_range
+
 /*
  * =================================
  * Flags checking section.
